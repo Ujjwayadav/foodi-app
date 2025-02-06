@@ -1,0 +1,101 @@
+.recipe-container {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  .recipe-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+  }
+  
+  .recipe-form {
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .recipe-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .recipe-input:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 2px #3b82f6;
+  }
+  
+  .recipe-input:disabled {
+    background-color: #f3f4f6;
+    cursor: not-allowed;
+  }
+  
+  .submit-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: #1d4ed8;
+  }
+  
+  .submit-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .loader {
+    width: 1rem;
+    height: 1rem;
+    animation: spin 1s linear infinite;
+  }
+  
+  .loader-large {
+    width: 2rem;
+    height: 2rem;
+    color: #2563eb;
+  }
+  
+  .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+  }
+  
+  .recipe-result {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-text {
+    white-space: pre-line;
+    color: #374151;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

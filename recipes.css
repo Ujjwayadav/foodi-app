@@ -1,0 +1,134 @@
+/* Recipe page container */
+.recipe-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header section */
+.recipe-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f6f8fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+}
+
+.recipe-header h1 {
+  font-size: 2.8rem;
+  color: #2d3748;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.recipe-header p {
+  color: #4a5568;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Dish name display */
+.dish-name {
+  font-size: 1.5rem;
+  color: #2b6cb0;
+  font-weight: 600;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: rgba(43, 108, 176, 0.1);
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Recipe section */
+.recipe-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.recipe-section h1 {
+  color: #2d3748;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 15px;
+}
+
+/* Button styling */
+.recipe-section button {
+  background-color: #4299e1;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.recipe-section button:hover {
+  background-color: #3182ce;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-section button:active {
+  transform: translateY(0);
+}
+
+/* Recipe content */
+.recipe-content {
+  line-height: 1.8;
+  color: #4a5568;
+  font-size: 1.1rem;
+  white-space: pre-line;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #4299e1;
+}
+
+/* Loading animation */
+@keyframes loading {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.loading::after {
+  content: "Loading recipe...";
+  color: #4a5568;
+  animation: loading 1.5s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .recipe-container {
+    padding: 10px;
+  }
+  
+  .recipe-header h1 {
+    font-size: 2rem;
+  }
+  
+  .recipe-section {
+    padding: 20px;
+  }
+  
+  .recipe-content {
+    font-size: 1rem;
+  }
+}
